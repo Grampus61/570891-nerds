@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+      <title>HTML Academy: Нёрдс</title>
+  </head>
+      <body>
+        <header class="catalog-header">
+          <!--<h1>Каталог<h1>-->
+          <nav class="catalog-navigation">
+          <div class="nerds-logo">
+            <img src="http://index-logo.png" width="140" height="49" alt="Нёрдс">
+          </div>
+          <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="http://nerds-catalog.psd">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+           </ul>
+           <div class="user-block">
+               <a href="#">Корзина</a>
+           </diV>
+           <div>
+              <b>Магазин готовых шаблонов</b>
+           </div>
+           </nav>
+          </header>
+          <main class="catalog">
+              <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="filter-cost.value=filter-cost.value">
+          <fieldset>
+              <legend>Стоимость:</legend>
+              <input type="range" id="filter-cost" name="filter-cost" min="0" max="15000" step="1">
+              <label for="filter-cost"></label><br>
+              <label for="filter-from">от</label>
+              <input type="number" id="filter-from" name="filter-from" min="0" max="15000" step="1" value="0">
+              <label for="filter-to">до</label>
+              <input type="number" id="filter-to" name="filter-to" min="0" max="15000" step="1" value="15000">
+
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="grid" value="adaptiv" id="filter-adapt" checked>
+                  <label for="filter-adapt">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="fix" id="filter-fixing">
+                  <label for="filter-fixing">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="rubber" id="filter-rubbered">
+                  <label for="filter-rubbered">Резиновая</label>
+              </li>
+              </ul>
+              </fieldset>
+              <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="slider" id="filter-slidered" checked>
+                  <label for="filter-slidered">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="advantage" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="filter-galleries">
+                  <label for="filter-galleries">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="basket" id="filter-baskets">
+                  <label for="filter-baskets">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+            </div>
+            <section>
+              <!--<h2>Каталог форм</h2>-->
+                <ul>
+                  <li><b>Сортировать:</b></li>
+                  <li>По цене</li>
+                  <li>По типу</li>
+                  <li>По названию</li>
+                </ul>
+                <ul>
+                  <li>
+                    <h3>Информационный сайт  для туристов</h3>
+                    <p><img src="img-sedona.jpg" width="240" height="240" alt="Sedona Hover"></p>
+                    <span>9 900 руб.</span>
+                  </li>
+                  <li>
+                    <h3>Продуктовый лендинг приложения для iOS и Android</h3>
+                    <p><img src="img-pink.jpg" width="240" height="240" alt="Pink App"></p>
+                    <span>9 900 руб.</span>
+                  </li>
+                  <li>
+                    <h3>Сайт салоны красоты. Для мужчин, да.</h3>
+                    <p><img src="img-barbershop.jpg" width="240" height="240" alt="Barbershop"></p>
+                      <span>9 900 руб.</span>
+                  </li>
+                  <li>
+                    <h3>Интернет-магазин  вязаных игрушек</h3>
+                    <p><img src="img-mishka.jpg" width="240" height="240" alt="MISHKA"></p>
+                    <span>9 900 руб.</span>
+                 </li>
+                 <li>
+                   <h3>Лендинг курсов повышения квалификации</h3>
+                   <p><img src="img-aplus.jpg" width="240" height="240" alt="A Plus"></p>
+                   <span>9 900 руб.</span>
+                </li>
+                <li>
+                  <h3>Промо-сайт производителя крафтового кваса</h3>
+                  <p><img src="img-kvast.jpg" width="240" height="240" alt="КВАСТ"></p>
+                  <span>9 900 руб.</span>
+               </li>
+             </ul>
+            <ul class="pagination-list">
+               <li class="pagination-item-current pagination-item"><a href="#">1</a></li>
+               <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+             <li class="pagination-item"><a href="#">4</a></li>
+           </ul>
+          </section>
+         <div class="map-contacts">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p>191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8<br>
+             тел. +7 (812) 275-75-75</p>
+          <button type="submit">Напишите нам</button>
+          <p><img src="http://map-marker.png" width="940" height="1094" alt="Карта"></p>
+      </div>
+    </main>
+          <footer>
+            <div class="social">
+                <ul>
+                  <li>
+                    <a class="social-btn-vk" href="#">Вконтакте</a>
+                  </li>
+                  <li>
+                    <a class="social-btn-fb" href="#">Фейсбук</a>
+                  </li>
+                  <li>
+                    <a class="social-btn-inst" href="#">Инстаграм</a>
+                  </li>
+                </ul>
+              </div>
+            <div class="frienship">
+                <b>Давайте дружить, это выгодно!</b>
+                <p><span>Скидка 10% для всех друзей из социальных сетей</span></p>
+            </div>
+          </footer>
+          <section class="modal modal-letter">
+      <h2>Напишите нам</h2>
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p><label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
+            <p><label for="post-user">Ваш e-mail:</label>
+                <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
+                <p><label class="visually-hidden" for="letter-field">Текст письма:</label>
+                    <input type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
+                    <button class="button" type="submit">Отправить</button>
+                  </form>
+                  <button class="modal-close" type="button">Закрыть</button>
+                </section>
+        </body>
+        </html>
 
