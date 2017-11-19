@@ -9,7 +9,7 @@
           <!--<h1>Каталог Нёрдс<h1>-->
           <nav class="catalog-navigation">
           <div class="nerds-logo">
-            <img src="http://index-logo.png" width="140" height="49" alt="Нёрдс">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
           </div>
           <ul>
               <li>
@@ -27,6 +27,7 @@
            </ul>
            <div class="user-block">
                <a href="#">Корзина</a>
+               <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
            </diV>
            <div>
               <b>Магазин готовых шаблонов</b>
@@ -88,7 +89,7 @@
               </ul>
             </fieldset>
             <button class="button" type="submit">Показать</button>
-            </div>
+          </form>
             <section>
               <!--<h2>Каталог</h2>-->
                 <ul>
@@ -100,32 +101,32 @@
                 <ul>
                   <li>
                     <h3>Информационный сайт  для туристов</h3>
-                    <p><img src="img-sedona.jpg" width="240" height="240" alt="Sedona Hover"></p>
+                    <p><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona Hover"></p>
                     <span>9 900 руб.</span>
                   </li>
                   <li>
                     <h3>Продуктовый лендинг приложения для iOS и Android</h3>
-                    <p><img src="img-pink.jpg" width="240" height="240" alt="Pink App"></p>
+                    <p><img src="img/img-pink.jpg" width="360" height="576" alt="Pink App"></p>
                     <span>9 900 руб.</span>
                   </li>
                   <li>
                     <h3>Сайт салоны красоты. Для мужчин, да.</h3>
-                    <p><img src="img-barbershop.jpg" width="240" height="240" alt="Barbershop"></p>
+                    <p><img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></p>
                       <span>9 900 руб.</span>
                   </li>
                   <li>
                     <h3>Интернет-магазин  вязаных игрушек</h3>
-                    <p><img src="img-mishka.jpg" width="240" height="240" alt="MISHKA"></p>
+                    <p><img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA"></p>
                     <span>9 900 руб.</span>
                  </li>
                  <li>
                    <h3>Лендинг курсов повышения квалификации</h3>
-                   <p><img src="img-aplus.jpg" width="240" height="240" alt="A Plus"></p>
+                   <p><img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus"></p>
                    <span>9 900 руб.</span>
                 </li>
                 <li>
                   <h3>Промо-сайт производителя крафтового кваса</h3>
-                  <p><img src="img-kvast.jpg" width="240" height="240" alt="КВАСТ"></p>
+                  <p><img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ"></p>
                   <span>9 900 руб.</span>
                </li>
              </ul>
@@ -141,21 +142,27 @@
           <p>191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8<br>
              тел. +7 (812) 275-75-75</p>
+          </div>
+         <div class="map-contacts">
           <button type="submit">Напишите нам</button>
-          <p><img src="http://map-marker.png" width="940" height="1094" alt="Карта"></p>
-      </div>
-    </main>
+          <p><img src="img/map.png" width="1440" height="416" alt="Карта"></p>
+          <p><img src="img/map-marker.png" width="231" height="190" alt="Маркер"></p>
+        </div>
+       </main>
           <footer>
             <div class="social">
                 <ul>
                   <li>
                     <a class="social-btn-vk" href="#">Вконтакте</a>
+                    <img src="img/map.svg" width="26" height="15" alt="Вконтакте">
                   </li>
                   <li>
                     <a class="social-btn-fb" href="#">Фейсбук</a>
+                    <img src="img/map.svg" width="26" height="15" alt="Фейсбук">
                   </li>
                   <li>
                     <a class="social-btn-inst" href="#">Инстаграм</a>
+                    <img src="img/map.svg" width="26" height="15" alt="Инстаграм">
                   </li>
                 </ul>
               </div>
@@ -165,17 +172,18 @@
             </div>
           </footer>
           <section class="modal modal-letter">
-      <h2>Напишите нам</h2>
-      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-        <p><label class="visually-hidden" for="user-name">Ваше имя:</label>
+           <h2>Напишите нам</h2>
+           <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+            <p><label class="visually-hidden" for="user-name">Ваше имя:</label>
             <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
             <p><label for="post-user">Ваш e-mail:</label>
-                <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
-                <p><label class="visually-hidden" for="letter-field">Текст письма:</label>
-                    <input type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
-                    <button class="button" type="submit">Отправить</button>
-                  </form>
-                  <button class="modal-close" type="button">Закрыть</button>
-                </section>
+            <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
+            <p><label class="visually-hidden" for="letter-field">Текст письма:</label>
+            <input type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
+            <button class="button" type="submit">Отправить</button>
+           </form>
+            <button class="modal-close" type="button">Закрыть</button>
+              <img src="img/close-cross.png" width="15" height="15" alt="Карта">
+          </section>
         </body>
-        </html>
+      </html>
