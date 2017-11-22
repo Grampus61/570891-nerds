@@ -1,1 +1,231 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto-bold", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  line-height: 24px;
+  color: #000000;
+  text-transform:;
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-weight: medium;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+.navigation-block,
+.user-block {
+  text-transform: uppercase;
+  list-style: none;
+}
+.partners {
+  margin: 0;
+  padding: 0;
+}
+.partners-list {
+  list-style: none;
+}
+.partners-list .web-btn-htmlacademy:hover {
 
+}
+.nerds-contacts b {
+  font: inherit;
+  text-transform: uppercase;
+}
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.web .button {
+  background-color: #ff6666;
+}
+.web .button:hover {
+  background-color: #ff3333;
+}
+.web .button:focus {
+  background-color: #cc3333;
+}
+.apps .button {
+  background-color: #00cc66;
+}
+.apps .button:hover {
+  background-color: #00cc66;
+}
+.apps .button:focus {
+  background-color: #009966;
+}
+.presentations .button {
+  background-color: #ffcc33;
+}
+.presentations .button:hover {
+  background-color: #ffcc33  rgb(255, 204, 51);
+}
+.presentations .button:focus {
+  background-color: #cc9933;
+}
+.contacts .button {
+  background-image: url("img/btn-write-us.png");
+}
+.main-navigation .button {
+  color: #ffffff;
+  background: #ff6666 url("img/btn copy-red.png");
+}
+.main-navigation .button:hover {
+  background-color: #ff3333;
+  background: url("/img/btn copy 6.png");
+}
+.main-navigation .button:focus {
+  background-color: #cc3333;
+  background: url("/img/btn copy 7.png");
+}
+.main-navigation a {
+ color:  #000000;
+}
+.main-navigation a:hover {
+ color: #ff6666;
+}
+.main-navigation a:focus {
+  color: #999999;
+}
+.main-navigation a:active {
+  color: #000000;
+  text-decoration:underline;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+}
+.main-tag b {
+  font-size: 55px;
+  font-weight: medium;
+  line-height: 55px;
+}
+.container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  }
+.content {
+  background-color: #ffffff;
+
+}
+.about-us b {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.content span {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.about-nerds caption {
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 24px;
+  text-transform: uppercase;
+  caption-side: top;
+  text-align: center;
+  font-weight: bolder;
+}
+.about-nerds td {
+
+  height: 45;
+  width: 120px;
+}
+.about-nerds tr:first-child {
+  font-size: 45px;
+  font-weight: bolder;
+}
+.about-nerds tr:first-child sup {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.about-nerds tr:last-child {
+  font-size: 16px;
+  font-weight: regular;
+
+}
+.content-list li {
+  list-style: url("img/Layer23copy3.png");
+  list-style-position: outside;
+}
+
+.main-footer {
+  font-family: "roboto-bold", Arial, sans-serif;
+}
+
+.nerds-contacts b {
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.nerds-contacts .button {
+background-color: #ff6666;
+}
+.frienship b {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #cccccc url("img/vk-icon.png") no-repeat;
+  vertical-align: middle;
+}
+.main-footer-list {
+  list-style: none;
+  text-decoration: none;
+}
+ .social-btn-vk {
+  background-color: #cccccc  url("img/vk-icon.png") no-repeat;
+  background-position: 0 0;
+}
+.modal {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+
+}
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.letter-form input[type="text"] {
+  font: inherit;
+  color: #000000;
+  border: 2px solid #cccccc;
+}
+.letter-form input,
+.letter-form input:hover {
+  border: 2px solid #cccccc;
+}
+.letter-form input:focus {
+  border: 2px solid #000000;
+}
+.letter-form input:invalid {
+  border: 2px solid #ff3333;
+}
+.modal-close {
+  color: #ffcccc;
+}
+.modal-close:hover {
+  color: #ff6666;
+}
+.modal-close:focus {
+  color: #ffcccc rgb(255, 204, 204);
+}

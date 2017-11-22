@@ -38,13 +38,12 @@
               <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="filter-cost.value=filter-cost.value">
           <fieldset>
               <legend>Стоимость:</legend>
-              <input type="range" id="filter-cost" name="filter-cost" min="0" max="15000" step="1">
+              <input type="range" id="filter-cost" name="filter-cost" required>
               <label for="filter-cost"></label><br>
               <label for="filter-from">от</label>
-              <input type="number" id="filter-from" name="filter-from" min="0" max="15000" step="1" value="0">
+              <input type="number" id="filter-from" name="filter-from"  min="0" max="0" value="0"  pattern="cursor:pointer"  >
               <label for="filter-to">до</label>
-              <input type="number" id="filter-to" name="filter-to" min="0" max="15000" step="1" value="15000">
-
+              <input type="number" id="filter-to" name="filter-to" min="15000" max="15000" value="15000">
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -100,32 +99,32 @@
                 </ul>
                 <ul>
                   <li>
-                    <h3>Информационный сайт  для туристов</h3>
+                    <a href="#"><h3>Информационный сайт  для туристов</h3></a>
                     <p><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona Hover"></p>
                     <span>9 900 руб.</span>
                   </li>
                   <li>
-                    <h3>Продуктовый лендинг приложения для iOS и Android</h3>
+                    <a href="#"><h3>Продуктовый лендинг приложения для iOS и Android</h3></a>
                     <p><img src="img/img-pink.jpg" width="360" height="576" alt="Pink App"></p>
                     <span>9 900 руб.</span>
                   </li>
                   <li>
-                    <h3>Сайт салоны красоты. Для мужчин, да.</h3>
+                    <a href="#"><h3>Сайт салоны красоты. Для мужчин, да.</h3></a>
                     <p><img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></p>
                       <span>9 900 руб.</span>
                   </li>
                   <li>
-                    <h3>Интернет-магазин  вязаных игрушек</h3>
+                    <a href="#"><h3>Интернет-магазин  вязаных игрушек</h3></a>
                     <p><img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA"></p>
                     <span>9 900 руб.</span>
                  </li>
                  <li>
-                   <h3>Лендинг курсов повышения квалификации</h3>
+                   <a href="#"><h3>Лендинг курсов повышения квалификации</h3></a>
                    <p><img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus"></p>
                    <span>9 900 руб.</span>
                 </li>
                 <li>
-                  <h3>Промо-сайт производителя крафтового кваса</h3>
+                  <a href="#"><h3>Промо-сайт производителя крафтового кваса</h3></a>
                   <p><img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ"></p>
                   <span>9 900 руб.</span>
                </li>
