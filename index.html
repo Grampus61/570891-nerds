@@ -4,42 +4,45 @@
     <meta charset="utf-8">
       <title>HTML Academy: Нёрдс</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
-      <link href="css/style-index.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
     </head>
       <body class="main-page">
-        <header class="main-header">
+          <header class="main-header">
+            <div class="container">
             <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
             <nav class="main-navigation">
-              <div class="main-navigation-center">
-                <div class="menu">
-              <div class="nerds-logo">
+            <div class="navigation-container">
+             <ul class="nerds-logo">
+              <li>
+                <a class="main-logo" href="#">
                 <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
-              </div>
-                  <ul class="navigation-block">
-                    <li>
-                      <a href="#">Студия</a>
-                    </li>
-                    <li>
-                      <a href="#">Клиенты</a>
-                    </li>
-                    <li>
-                      <a href="inner.html">Магазин</a>
-                    </li>
-                    <li>
-                      <a href="#">Контакты</a>
-                    </li>
-                  </ul>
-              <ul class="user-block">
-                <li>
-                 <a class="user-block-icon" href="#">Корзина</a>
-               </li>
+              </li>
              </ul>
-            </div>
+            <ul class="navigation-block">
+             <li>
+              <a href="#">Студия</a>
+             </li>
+             <li>
+              <a href="#">Клиенты</a>
+             </li>
+             <li>
+              <a href="inner.html">Магазин</a>
+             </li>
+             <li>
+             <a href="#">Контакты</a>
+             </li>
+             </ul>
+             <ul  class="user-block">
+              <li class="user-icon">
+                <a href="#">Корзина</a>
+              </li>
+             </ul>
            </div>
            </nav>
-           <section class="slider">
-      <div class="container">
+         </div>
+       <section class="slider">
+        <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -56,7 +59,7 @@
           <a class="slider-item-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </li>
           <li class="slider-item">
-            <b>Любим математику как никто другой</b>
+            <b>Любим математику<br> как никто другой</b>
             <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
           <a class="slider-item-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </li>
@@ -66,7 +69,7 @@
             <a class="slider-item-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </li>
         </ul>
-      </div>
+    </div>
     </section>
       </header>
       <main class="container">
@@ -74,48 +77,51 @@
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
           <li class="web">
+            <img src="img/illustration-1.jpg" width="300" height="146" alt="Ноутбук">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Ноутбук">
-            <button class="button" type="submit">ЗАКАЗАТЬ</button>
+            <button  class="button button-red" type="submit">ЗАКАЗАТЬ</button>
           </li>
           <li class="apps">
+            <img src="img/illustration-2.jpg" width="300" height="146" alt="Смартфоны">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Смартфоны">
-            <button class="button" type="submit">ЗАКАЗАТЬ</button>
+            <button class="button button-green" type="submit">ЗАКАЗАТЬ</button>
           </li>
           <li class="presentations">
+            <img src="img/illustration-3.jpg" width="300" height="146" alt="Доска">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Доска">
-            <button class="button" type="submit">ЗАКАЗАТЬ</button>
+            <button class="button button-yellow" type="submit">ЗАКАЗАТЬ</button>
           </li>
         </ul>
         </section>
-        <div class="content">
-        <section class="about-us">
-          <h2 class="visually-hidden">О нас</h2>
+        <div class="about-us">
+          <section class="content">
+            <h2 class="visually-hidden">О нас</h2>
             <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
             <span>Выполняем заказы на разработку:</span>
             <ul class="content-list">
-              <li>
+              <li class="list1">
                 Веб-сайтов любой сложности
               </li>
-              <li>
+              <li class="list2">
                 Мобильных приложений для iOS и Android
               </li>
-              <li>
+              <li class="list3">
                 Слайдшоу и видео для корпоративных презентаций
               </li>
             </ul>
+            </section>
+            <section class="table-nerds">
+              <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс">
             <table class="about-nerds">
               <caption>С 2004 года любим точность во всем:</caption>
               <tr>
-                <th>146<sup>%</sub></th>
-                <th>100<sup>%</sup></th>
-                <th>50<sup>%</sup></th>
+                <td>146<sup>%</sub></td>
+                <td>100<sup>%</sup></td>
+                <td>50<sup>%</sup></td>
               </tr>
               <tr>
                 <td>Уровень самоотдачи</td>
@@ -123,83 +129,123 @@
                 <td>Минимальная предоплата</td>
               </tr>
             </table>
-          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс">
-        </section>
-      </div>
+          </section>
+         </div>
         <section class="partners">
           <h2 class="visually-hidden">Партнеры</h2>
           <ul class="partners-list">
             <li>
-              <a class="web-btn-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-               <img src="img/logo-html-academy.png" width="199" height="68" alt="html Академия">
+              <a class="partners-logo web-btn-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+               <img src="img/logo-htmlAcademy-black.png" width="199" height="68" alt="html Академия">
               </a>
             </li>
             <li>
-              <a class="web-btn-borodinski" href="#">
+              <a class="partners-logo partners-logo web-btn-borodinski" href="#">
                <img src="img/logo-borodinski.png" width="209" height="90" alt="Барбершоп Бородинский">
               </a>
             </li>
             <li>
-              <a class="web-btn-pink" href="#">
+              <a class="partners-logo web-btn-pink" href="#">
                <img src="img/logo-pink.png" width="185" height="52" alt="Пинк">
               </a>
             </li>
             <li>
-              <a class="web-btn-mishka" href="#">
+              <a class=partners-logo "web-btn-mishka" href="#">
                <img src="img/logo-mishka.png" width="173" height="84" alt="Мишка">
               </a>
             </li>
           </ul>
         </section>
+        <section class="contacts">
+         <div class="nerds-contacts">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p>191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8<br><br>
+             тел. +7 (812) 275-75-75</p>
+          <button class="button button-contacts" type="submit">Напишите нам</button>
+         </div>
+         <div class="map-marker">
+          <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
+         </div>
+         <div class="map">
+          <img src="img/map.png" width="1440" height="416" alt="Карта">
+         </div>
+        </section>
       </main>
-  <footer class="main-footer">
-    <section class="contacts">
-      <div class="nerds-contacts">
-        <b>NЁRDS DESIGN STUDIO</b>
-        <p>191186, Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8<br>
-           тел. +7 (812) 275-75-75</p>
-        <button class="button" type="submit">Напишите нам</button>
-      </div>
-      <div class="map-contacts">
-        <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
-        <img src="img/map.png" width="1440" height="416" alt="Карта">
-      </div>
-    </section>
-          <div class="main-social">
+     <footer class="main-footer">
+       <div class="container">
+        <div class="wrapper">
+
+        <div class="main-social">
         <ul class="main-footer-list">
-          <li>
-            <a class="social social-btn-vk" href="#"></a>
-
+         <li>
+           <a class="social social-btn" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+          <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+          	c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+          	c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+          	c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+          	c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+          	c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+          	s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+          	C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+          	s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+          	c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
+          </svg></a>
           </li>
           <li>
-            <a class="social social-btn-fb" href="#"></a>
-
+           <a class="social social-btn" href="#">
+           <span class="visually-hidden">Фейсбук</span>
+           <?xml version="1.0" encoding="utf-8"?>
+           <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+           <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           	 width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+           <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+           </svg></a>
           </li>
           <li>
-            <a class="social social-btn-inst" href="#"></a>
-            <img src="img/insta-icon.svg" width="26" height="15" alt="Фейсбук">
+           <a class="social social-btn" href="#">
+           <span class="visually-hidden">Инстаграм</span>
+           <?xml version="1.0" encoding="utf-8"?>
+           <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           	 width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+           <path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
+           	c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
+           	c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>
+           </svg></a>
           </li>
-        </ul>
-      </div>
-      <div class="frienship">
-        <b>Давайте дружить, это выгодно!</b>
-        <p><span>Скидка 10% для всех друзей из социальных сетей.</span></p>
-      </div>
+         </ul>
+       </div>
+       <div class="frienship">
+       <b>Давайте дружить, это выгодно!</b><br>
+       <p>Скидка 10% для всех друзей из социальных сетей.</p>
+     </div>
+     </div>
+     </div>
       </footer>
-      <section class="modal modal-letter">
+      <section class="modal-letter">
   <h2>Напишите нам</h2>
+  <span>Ваше имя:</span>
+  <span>Ваш e-mail:</span>
   <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-    <p><label for="user-name">Ваше имя:</label>
-        <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
-        <p><label for="post-user">Ваш e-mail:</label>
+    <p><label class="visually-hidden" for="user-name">Ваше имя:</label>
+        <input class="letter-name" type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
+        <p><label class="visually-hidden" for="post-user">Ваш e-mail:</label>
             <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
             <p><label for="letter-field">Текст письма:</label>
-                <input class="letter" type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
+                <input class="letter-text" type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
                 <button class="button" type="submit">Отправить</button>
               </form>
               <button class="modal-close" type="button">Закрыть</button>
-              <img src="img/close-cross.png" width="15" height="15" alt="Карта">
+
             </section>
   </body>
   </html>
