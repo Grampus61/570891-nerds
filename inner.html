@@ -8,7 +8,7 @@
       <link href="css/normalize.css" rel="stylesheet">
   </head>
       <body class="inner-page">
-        <header class="inner-header">
+        <header class="main-header inner-header">
           <!--<h1>Каталог Нёрдс<h1>-->
           <div class="container">
           <nav class="main-navigation">
@@ -26,7 +26,7 @@
              <li>
               <a href="#">Клиенты</a>
              </li>
-             <li>
+             <li  class="market">
               <a href="inner.html">Магазин</a>
              </li>
              <li>
@@ -48,11 +48,37 @@
        </div>
           </header>
           <main class="container">
+            <h1 class="visually-hidden">Каталог</h1>
+            <ul class="prodact-sort">
+              <li>Стоимость:</li>
+              <li>Сортировать:</li>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По названию</li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+                  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                      <rdf:Description rdf:about=""/>
+                   </rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata>
+                <image id="icon-down-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAQAAADI+WwIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCxMVNzSP7p79AAAAVUlEQVQI113NQRnAIAyD0fwSsICFWUALFuoJLViYBSaBHfjKWNNL+i6BIlPMI0RnhjMhSsAbCSHaj4tzPrAhZ2Gb88mJscbW7ywqk0GKLDrV+8nX119wtCvml5QBwAAAAABJRU5ErkJggg=="/>
+                </svg></li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+                  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                      <rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata>
+                <image id="icon-up-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAQAAADI+WwIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCxMVOAbAodOyAAAAf0lEQVQI12XNMQ7BYACG4ad/GCw2U23C4gg9SYeKI3ABRsIlTP6LOIOlRqPJYpBgaCsN7/Z+eZMveauIwcE8f1UWNMwUikaSqo49pdTVJH+066UUQ4tWHQcu+uBulN+aelWP9K3rOo6ddb7XT9O8DNi2Rro2JMfMyS9ZsPPP/gNnrxpi4JlLiwAAAABJRU5ErkJggg=="/>
+                </svg>
+              </li>
+            </ul>
             <div class="catalog-columns">
            <section class="filters">
            <form method="get" action="https://echo.htmlacademy.ru" oninput="filter-cost.value=filter-cost.value">
           <fieldset class="filter fieldset-coast">
-              <legend>Стоимость:</legend>
+              <legend class="visually-hidden">Стоимость:</legend>
           <div class="range-filter">
            <div class="range-controls">
             <div class="scale">
@@ -62,24 +88,24 @@
             <div class="toggle toggle-max"></div>
            </div>
           <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
           </div>
         </div>
           </fieldset>
           <fieldset class="filter fieldset-net">
             <legend>Сетка:</legend>
               <ul class="net-list">
-                <li>
-                  <input type="radio" name="grid" value="adaptiv" id="filter-adapt" checked>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptiv" id="filter-adapt" checked>
                   <label for="filter-adapt">Адаптивная</label>
                 </li>
-                <li>
-                  <input type="radio" name="grid" value="fix" id="filter-fixing">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fixing">
                   <label for="filter-fixing">Фиксированная</label>
                 </li>
-                <li>
-                  <input type="radio" name="grid" value="rubber" id="filter-rubbered">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubbered">
                   <label for="filter-rubbered">Резиновая</label>
               </li>
               </ul>
@@ -87,41 +113,34 @@
               <fieldset class="filter fieldset-features">
               <legend>Особенности:</legend>
               <ul class="features-list">
-                <li>
-                  <input type="checkbox" name="slider" id="filter-slidered" checked>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slidered" checked>
                   <label for="filter-slidered">Слайдер</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="advantage" id="filter-advantages">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantages">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="news" id="filter-news" checked>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="gallery" id="filter-galleries">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-galleries">
                   <label for="filter-galleries">Галерея</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="basket" id="filter-baskets">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-baskets">
                   <label for="filter-baskets">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button-filter" type="submit">Показать</button>
           </form>
         </section>
               <!--<section class="prodact">-->
               <!--<h2>Каталог</h2>-->
                <section class="prodact">
-
-                  <h3>Сортировать:</h3>
-                  <ul class="prodact-sort">
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По названию</li>
-                  </ul>
                 <ul class="prodact-list">
                   <li class="prodact-item prodact-list-sedona">
                     <a class="prodact-head" href="#"><h3 class="visually-hidden">Информационный сайт  для туристов</h3><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="40" viewBox="0 0 360 40">
@@ -135,10 +154,10 @@
                     <image id="browser" width="360" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAAoCAQAAAB5w6iGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCxMVORbEDfKXAAACQUlEQVR42u3aP2tTURzG8W8aMwjaDjY0cxLRqbPaLlKVFjymq4hz8QX4HtSsCunaVrumXqmRUlydXWt8A9UhqSBYpU5i/pxzz20IhPx4Plt+9+Hkcnk43NybHLhF6tymgMj0OuUjT5PPObfIJy5O+mxExuAnN/LXtrg+6fMQGYsClZz7pZsNMeN0RnUWQwozkz4DkXFSocUUFVpMUaHFFBVaTFGhxRQVWkxRocWUrIXu8JxbLFBimTrdSLpLnSVKlFjiBZ1I+oQ6y5RY4CbPommRFDl3liHV4nHy7f9HV+QNd4LpAx4lx33pHe4F04c87EvPs8XapC+LTKsshW5xP/nTP3J5PrDiTR+w5knvByp9yGryeyidqNIymnihO1R7d+d/XJE2l4fGXaq9+21P+oi5ofEPyt70FdqetEhU/B76la/OkBzT8Iw3fQUNphuB9HdeTvrCyHSKF/pt8EjimTWD6WbGFWLfKpIiXuh28MjRudJfM64QW0ckhZ5DiynxQleCR66eK13OuEJsHZEU8UI/CB5xntl6ML2ecYXYt4qk0GM7MSW+Q8+x7fKDQ5dn11NnmOW1N73jLegldt0FT3pbdZbRZPlRuMo7N987cEVagfeEcJf3rjiQ3g+++l6hNZCe13tCGV22/3JAhwZ7tMlRpcYGs6npLps0aQMVamxE9tsTGuzxhTPK1Hii3VlGl7XQIlNBz6HFFBVaTFGhxRQVWkxRocUUFVpMUaHFFBVaTFGhxRQVWkxRocUUFVpM+QsY/YJO3tltywAAAABJRU5ErkJggg=="/>
                     </svg></a>
                     <p><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona Hover"></p>
-                    <div>
+                    <div class="prodact-list-sedona info">
                     <b>Sedona<br></b>
-                    <span>Информационный сайт<br> для туристов</span>
-                    <button class="button" type="submit">9 900 руб.</button>
+                    <p>Информационный сайт<br> для туристов</p>
+                    <button class="button button-info" type="submit">9 900 руб.</button>
                   </div>
                   </li>
                   <li class="prodact-item">
@@ -214,7 +233,7 @@
                <li class="pagination-item"><a href="#">2</a></li>
                <li class="pagination-item"><a href="#">3</a></li>
                <li class="pagination-item"><a href="#">4</a></li>
-               <li class="pagination-item"><a href="#">следующая</a></li>
+               <li class="pagination-item pagination-item-last"><a href="#">следующая</a></li>
              </ul>
           </section>
         </div>
@@ -288,7 +307,7 @@
           </div>
           <div class="frienship">
           <b>Давайте дружить, это выгодно!</b><br>
-          <span>Скидка 10% для всех друзей из социальных сетей.</span>
+          <p>Скидка 10% для всех друзей из социальных сетей.</p>
         </div>
         </div>
         </div>
