@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1051,10 +1052,10 @@ img {
 .modal-letter {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   color: #000000;
   background-color: #ffffff;
-  top: 350px;
+  top: 150px;
   left: 50%;
   width: 760px;
   padding: 73px 100px;
@@ -1063,7 +1064,7 @@ img {
 }
 .modal-close {
   position: absolute;
-  top: 82px;
+  top: 84px;
   right: 86px;
   width: 25px;
   height: 25px;
@@ -1101,20 +1102,22 @@ img {
   justify-content: space-between;
   margin-left: 0;
 }
-.letter-form label {
-  font-size: 16px;
-  font: inherit;
-  line-height: 18px;
-  color: #000000;
-}
+
 .letter-form input[type="text"] {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #eeeeee;
   box-sizing: border-box;
-  font: inherit;
-  color: #000000;
   width: 360px;
-  border: 2px solid #cccccc;
-  padding: 15px 0 15px 12px;
+  border: 2px solid #eeeeee;
+  padding: 12px 0 15px 12px;
   margin-top: 12px;
+}
+.letter-form input[name="letter"] {
+  padding-bottom: 86px;
+
 }
 .letter-form .letter-text {
   min-width: 760px;
