@@ -911,6 +911,7 @@ img {
   height: 416px;
   border: none;
   z-index: 2;
+  border: none;
 }
 .contacts p {
   padding-left: 240px;
