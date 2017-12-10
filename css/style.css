@@ -133,7 +133,6 @@ img {
 .navigation-block a:active,
 .user-block a:active {
   position: relative;
-
 }
 .navigation-block a::after:active {
   content: "";
@@ -480,19 +479,18 @@ img {
   text-decoration-style: solid;
   text-decoration-color: red;
 }
-                       /*   Cтилизация внуттренней страницы    */
-
+ /* Cтилизация внуттренней страницы */
 .inner-header {
   background-color: #eeeeee;
   min-height: 354px;
 }
 .inner-tag {
-  width: 1200px;
   height: 158px;
   font-family: inherit;
   font-size: 55px;
   line-height: 55px;
-  margin: 80px 0 60px 218px;
+  text-align: center;
+  margin-top: 80px;
 }
 .market a {
  text-decoration: underline;
@@ -952,7 +950,6 @@ img {
   margin-right: 50px;
   margin-bottom: 47px;
   background-color: #ff6666;
-
 }
 /* Подвал */
 .main-footer {
@@ -1026,20 +1023,16 @@ img {
 0% {
   transform: translateY(-2000px);
 }
-
 70% {
   transform: translateY(30px);
 }
-
 90% {
   transform: translateY(-10px);
 }
-
 100% {
   transform: translateY(0);
 }
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -1103,7 +1096,6 @@ img {
   justify-content: space-between;
   margin-left: 0;
 }
-
 .letter-form input[type="text"] {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -1118,7 +1110,6 @@ img {
 }
 .letter-form input[name="letter"] {
   padding-bottom: 86px;
-
 }
 .letter-form .letter-text {
   min-width: 760px;
