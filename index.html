@@ -9,35 +9,33 @@
   </head>
   <body class="main-page">
     <header class="main-header">
-      <div class="container">
+      <div class="main-header-container">
         <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
         <nav class="main-navigation">
-          <div class="navigation-container">
-            <ul class="nerds-logo">
-              <li>
-                <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
-              </li>
-            </ul>
-            <ul class="navigation-block">
-              <li>
-                <a class="navigation-block-link" href="#">Студия</a>
-              </li>
-              <li>
-                <a class="navigation-block-link" href="#">Клиенты</a>
-              </li>
-              <li>
-                <a class="navigation-block-link" href="inner.html">Магазин</a>
-              </li>
-              <li>
-                <a class="navigation-block-link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul  class="user-block">
-              <li class="user-icon">
-                <a class="user-icon-link" href="#">Корзина</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nerds-logo">
+            <li>
+              <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
+            </li>
+          </ul>
+          <ul class="navigation-block">
+            <li>
+              <a class="navigation-block-link" href="#">Студия</a>
+            </li>
+            <li>
+              <a class="navigation-block-link" href="#">Клиенты</a>
+            </li>
+            <li>
+              <a class="navigation-block-link" href="inner.html">Магазин</a>
+            </li>
+            <li>
+              <a class="navigation-block-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul  class="user-block">
+            <li class="user-icon">
+              <a class="user-icon-link" href="#">Корзина</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <section class="slider">
@@ -98,8 +96,8 @@
       <div class="about-us">
         <section class="content">
           <h2 class="visually-hidden">О нас</h2>
-          <b>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <span>Выполняем заказы на разработку:</span>
           <ul class="content-list">
             <li class="list1">Веб-сайтов любой сложности</li>
@@ -116,7 +114,7 @@
             <td>100<sup>%</sup></td>
             <td>50<sup>%</sup></td>
             </tr>
-            <tr>
+            <tr class="second-line">
             <td>Уровень самоотдачи</td>
             <td>Соблюдение сроков</td>
             <td>Минимальная предоплата</td>
@@ -207,21 +205,19 @@
         </div>
       </div>
     </footer>
-    <div class="container">
-      <section class="modal modal-letter">
-        <h2>Напишите нам</h2>
-        <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-          <p><label for="user-name">Ваше имя:</label>
-            <input class="letter-name" type="text" name="yourname" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
-          <p><label for="post-user">Ваш e-mail:</label>
-            <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
-          <p><label for="letter-field">Текст письма:</label>
-            <input class="letter-text" type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
-          <button class="button button-letter" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="submit">Закрыть</button>
-      </section>
-    </div>
+    <section class="modal modal-letter">
+      <h2>Напишите нам</h2>
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p><label for="user-name">Ваше имя:</label>
+          <input class="letter-name" type="text" name="yourname" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
+        <p><label for="post-user">Ваш e-mail:</label>
+          <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
+        <p><label for="letter-field">Текст письма:</label>
+          <input class="letter-text" type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
+        <button class="button button-letter" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="submit">Закрыть</button>
+    </section>
     <script src="js/popup.js"></script>
   </body>
 </html>

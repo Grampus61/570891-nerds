@@ -8,37 +8,35 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="main-header inner-header">
+    <header class="main-header">
       <!--<h1>Каталог Нёрдс<h1>-->
-      <div class="container">
+      <div class="main-header-container">
         <nav class="main-navigation">
-          <div class="navigation-container">
-            <ul class="nerds-logo">
-              <li>
-                <a class="main-logo" href="index.html">
-                <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс"></a>
-              </li>
-            </ul>
-            <ul class="navigation-block">
-              <li>
-                <a class="navigation-block-link" href="#">Студия</a>
-              </li>
-              <li>
-                <a class="navigation-block-link" href="#">Клиенты</a>
-              </li>
-              <li>
-                <a class="market-link" title="Магазин">Магазин</a>
-              </li>
-              <li>
-                <a class="navigation-block-link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul  class="user-block">
-              <li class="user-icon">
-                <a class="user-icon-link" href="#">Корзина</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nerds-logo">
+            <li>
+              <a class="main-logo" href="index.html">
+              <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс"></a>
+            </li>
+          </ul>
+          <ul class="navigation-block">
+            <li>
+              <a class="navigation-block-link" href="#">Студия</a>
+            </li>
+            <li>
+              <a class="navigation-block-link" href="#">Клиенты</a>
+            </li>
+            <li>
+              <a class="market-link" title="Магазин">Магазин</a>
+            </li>
+            <li>
+              <a class="navigation-block-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul  class="user-block">
+            <li class="user-icon">
+              <a class="user-icon-link" href="#">Корзина</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="container">
@@ -280,21 +278,19 @@
         </div>
       </div>
     </footer>
-    <div class="container">
-      <section class="modal modal-letter">
-        <h2>Напишите нам</h2>
-        <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-          <p><label for="user-name">Ваше имя:</label>
-            <input class="letter-name" type="text" name="yourname" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
-          <p><label for="post-user">Ваш e-mail:</label>
-            <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
-          <p><label for="letter-field">Текст письма:</label>
-            <input class="letter-text" type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
-          <button class="button button-letter" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="submit">Закрыть</button>
-      </section>
-    </div>
+    <section class="modal modal-letter">
+      <h2>Напишите нам</h2>
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p><label for="user-name">Ваше имя:</label>
+          <input class="letter-name" type="text" name="yourname" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
+        <p><label for="post-user">Ваш e-mail:</label>
+          <input type="text" name="post" id="post-user" placeholder="Для отправки ответа"></p>
+        <p><label for="letter-field">Текст письма:</label>
+          <input class="letter-text" type="text" name="letter" id="letter-field" placeholder="В свободной форме"></p>
+        <button class="button button-letter" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="submit">Закрыть</button>
+    </section>
     <script src="js/popup.js"></script>
   </body>
 </html>

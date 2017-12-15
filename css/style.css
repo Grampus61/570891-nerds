@@ -9,6 +9,12 @@ body {
   padding: 0;
 }
 
+.main-header-container {
+  width: 1160px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -37,23 +43,11 @@ a {
 }
 
 .main-header {
-  min-height: 545px;
-  min-width: 1160px;
   background-color: #eeeeee;
-  padding: 0 20px;
-  margin: 0;
-  margin-bottom: 80px;
+  margin: 0 auto;
 }
 
 .main-navigation {
-  display: flex;
-  min-height: 70px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -61,6 +55,10 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   list-style: none;
+  min-height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .nerds-logo {
@@ -92,17 +90,17 @@ a {
   min-width: 440px;
   list-style: none;
   padding: 0;
-  margin-top: 72px;
+  margin-top: 74px;
   margin-right: 230px;
 }
 
 .navigation-block li {
-  margin-right: 47px;
+  margin-right: 48px;
 }
 
 .navigation-block li:last-child {
   margin-right: 0;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .user-block {
@@ -111,26 +109,21 @@ a {
   max-width: 116px;
   list-style: none;
   padding: 0;
-  padding-left: 52px;
+  padding-left: 54px;
   margin-right: 0;
-  margin-top: 72px;
+  margin-top: 74px;
 }
 
 .user-block .user-icon::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 9px;
+  top: 8px;
+  left: 13px;
   width: 15px;
   height: 15px;
   background-color: #eeeeee;
   background-image: url(../img/cart-icon.png);
   opacity: 0.3;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  background-color: #eeeeee;
 }
 
 .navigation-block-link,
@@ -202,7 +195,7 @@ a {
 
 .slider-item {
   display: none;
-  padding: 73px 0 80px 0;
+  padding: 72px 0 80px 0;
   margin: 0;
 }
 
@@ -319,7 +312,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 19px;
+  margin-top: 22px;
 }
 
 .services-list p {
@@ -376,9 +369,9 @@ a {
 
 .about-us {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
-  margin-bottom: 65px;
+  margin-bottom: 68px;
   background-color: #ffffff;
   border-top: 2px solid #eeeeee;
 }
@@ -387,6 +380,7 @@ a {
   position: relative;
   min-width: 660px;
   margin-top: 75px;
+  margin-right: 125px;
 }
 
 .content-list {
@@ -397,8 +391,11 @@ a {
 }
 
 .content-list li {
-  padding: 10px 0 10px 0;
+  padding: 11px 0 8px 2px;
   margin-bottom: 10px;
+}
+.content-list li:last-child {
+  padding-top: 15px;
 }
 
 .content-list .list1::after {
@@ -438,8 +435,8 @@ a {
 }
 
 .table-nerds {
-  width: 360px;
-  margin-top: 40px;
+  min-width: 360px;
+  margin-top: 41px;
 }
 
 .content *:last-child,
@@ -453,7 +450,7 @@ a {
 
 .content b {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 45px;
 }
 
@@ -476,6 +473,7 @@ a {
   width: 100%;
   padding: 0;
   margin-top: 32px;
+  margin-left: 2px;
 }
 
 .about-nerds caption {
@@ -489,8 +487,7 @@ a {
 
 .about-nerds td {
   width: 50%;
-  padding: 9px 0;
-  padding-bottom: 0;
+  padding: 10px 0 3px 0;
 }
 
 .about-nerds tr:first-child {
@@ -511,9 +508,10 @@ tr:first-child sup {
   padding-right: 50px;
 }
 
-.about-nerds tr:last-child {
+.about-nerds .second-line {
   line-height: 18px;
   color: #333333;
+  padding-top: 5px;
 }
 
 .partners-list {
@@ -560,13 +558,12 @@ tr:first-child sup {
 }
 
 .inner-tag {
-  height: 158px;
-  font-family: inherit;
+  height: 162px;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  margin-top: 74px;
-  margin-bottom: 58px;
+  margin-top: 73px;
+  margin-bottom: 55px;
 }
 
 .market-link {
@@ -583,7 +580,7 @@ tr:first-child sup {
 
 .filters {
   padding: 0;
-  margin: 0;
+  margin-top: -1px;
   margin-right: 140px;
   margin-left: -2px;
 }
@@ -606,7 +603,7 @@ tr:first-child sup {
 
 .range-filter {
   width: 260px;
-  margin-top: 51px;
+  margin-top: 49px;
 }
 
 .filter-title {
@@ -858,6 +855,7 @@ tr:first-child sup {
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 267px;
+  margin-top: 15px;
 }
 
 .product-sort-image {
@@ -875,7 +873,7 @@ tr:first-child sup {
   font-size: 0;
   padding: 0;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 18px;
   opacity: 0.3;
 }
 
@@ -985,7 +983,7 @@ tr:first-child sup {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .pagination-item a {
@@ -1048,11 +1046,11 @@ tr:first-child sup {
 
 .nerds-contacts {
   position: absolute;
-  top: 56px;
-  left: 250px;
+  top: 54px;
+  left: 251px;
   background-color: #ffffff;
-  padding-top: 50px;
-  padding-left: 50px;
+  padding-top: 48px;
+  padding-left: 49px;
   margin-left: 122px;
   z-index: 3;
 }
@@ -1065,6 +1063,8 @@ tr:first-child sup {
 }
 
 .nerds-contacts b {
+  font-size: 18px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: bolder;
   padding-top: 50px;
@@ -1072,7 +1072,7 @@ tr:first-child sup {
 
 .nerds-contacts p {
   color: #666666;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .nerds-contacts .phone {
@@ -1082,7 +1082,7 @@ tr:first-child sup {
 
 .button-contacts {
   min-width: 218px;
-  margin-top: 36px;
+  margin-top: 40px;
   margin-right: 50px;
   margin-bottom: 48px;
   background-color: #ff6666;
@@ -1111,14 +1111,15 @@ tr:first-child sup {
 
 .frienship b {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 36px;
   padding-bottom: 10px;
 }
 
 .frienship p {
   line-height: 22px;
-  margin-top: 8px;
+  padding-left: 3px;
+  margin-top: 9px;
 }
 
 .main-social {
@@ -1166,44 +1167,23 @@ tr:first-child sup {
 }
 
 /* Модальное окно */
-@keyframes bounce {
-0% {
-  transform: translateY(-2000px);
-}
-70% {
-  transform: translateY(30px);
-}
-90% {
-  transform: translateY(-10px);
-}
-100% {
-  transform: translateY(0);
-}
-}
-
-.modal {
+.modal-letter {
   display: none;
   position: fixed;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
-}
-
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-.modal-letter {
+  box-sizing: border-box;
   width: 960px;
-  font-weight: bolder;
-  background-color: #ffffff;
+  height: 590px;
   top: 140px;
-  bottom: 192px;
-  left: 50%;
+  right: 279px;
   padding-top: 67px;
-  padding-right: 0px;
-  margin-bottom: -34px;
-  margin-left: -482px;
+  padding-right: 100px;
+  padding-left: 100px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
   z-index: 4;
 }
@@ -1237,7 +1217,6 @@ tr:first-child sup {
   line-height: 45px;
   margin: 0;
   margin-bottom: 38px;
-  margin-left: 100px;
 }
 
 .modal-letter label[for="post-user"] {
@@ -1255,8 +1234,6 @@ tr:first-child sup {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 0;
-  margin-left: 100px;
 }
 
 .letter-form input[type="text"] {
@@ -1306,4 +1283,24 @@ tr:first-child sup {
 
 .letter-form input[type="text"]:invalid {
   border: 2px solid #ff3333;
+}
+
+@keyframes bounce {
+0% {
+  transform: translateY(-2000px);
+}
+70% {
+  transform: translateY(30px);
+}
+90% {
+  transform: translateY(-10px);
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
